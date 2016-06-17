@@ -14,12 +14,12 @@ function init () {
         var width = prompt("Enter width: ");
 
         // container height with ul's
-        for (var i = 0; i < width; i++) {
+        for (var i = 0; i < height; i++) {
             $('#container').append("<ul></ul>");
         }
 
         // fill ul with li for width
-        for (var j = 0; j < height; j++) {
+        for (var j = 0; j < width; j++) {
             $('ul').append('<li class="pixel"></li>');
         }
 
