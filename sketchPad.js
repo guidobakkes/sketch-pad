@@ -19,8 +19,13 @@ function init () {
         }
 
         // fill ul with li for width
-        for (var j = 0; j < width; j++) {
-            $('ul').append('<li class="pixel"></li>');
+        if (width < 31) {
+            for (var j = 0; j < width; j++) {
+                $('ul').append('<li class="pixel"></li>');
+            }
+        } else {
+            alert('Oops, something went wrong.');
+            window.location.reload();
         }
 
         $('.pixel').mouseenter(function() {
