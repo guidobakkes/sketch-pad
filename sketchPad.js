@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 function init () {
 
-    $('button').on('click', function() {
+    $('[data-start]').on('click', function() {
         $(this).remove();
         // create container div
         $('body').append('<div id="container"</div>');
