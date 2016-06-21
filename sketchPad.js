@@ -28,8 +28,14 @@ function init () {
             window.location.reload();
         }
 
+        // add opacity each time mouse enters a block
         $('.pixel').mouseenter(function() {
             $(this).addClass('bg-color');
+            $(this).css({
+                opacity: function(index, value) {
+                    return parseFloat(value) * 1.5;
+                }
+            });
         });
     });
 }
