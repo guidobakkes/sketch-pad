@@ -18,11 +18,14 @@ body {
 }
 
 [data-clear] {
-    width: 100%;
-    height: 100px;
+    width: 150px;
+    height: auto;
+    padding: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    right: 10px;
     border: none;
+    border-radius: 2px;
     color: white;
     font-size: 20px;
     background-color: #d5978e;
@@ -30,9 +33,11 @@ body {
 }
 
 #container {
-    width: 816px;
+    max-width: 816px;
+    border: 1px solid #2d2d2d;
     height: 1000px;
     margin: 20px auto;
+    position: relative;
 }
 
 ul {
@@ -43,9 +48,11 @@ ul {
 li {
     list-style: none;
     display: inline-block;
-    border: 1px solid #594e49;
     width: 25px;
     height: 25px;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .bg-color {
