@@ -1,8 +1,9 @@
 body {
-    background-color: #fff9ed;
     margin: 0;
     padding: 0;
     min-width: 825px;
+    background: linear-gradient(146deg, #84d6d0, #2e8fd2);
+    background-size: 400% 200%;
 }
 
 [data-start] {
@@ -34,7 +35,8 @@ body {
 
 #container {
     max-width: 816px;
-    border: 1px solid #2d2d2d;
+    border: 1px solid #f9f9f9;
+    border-radius: 2px;
     height: 1000px;
     margin: 20px auto;
     position: relative;
