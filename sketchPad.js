@@ -1,14 +1,10 @@
 $(document).ready(function() {
-    init();
+    initGrid();
+    clearGrid();
 });
 
-function init () {
-
+function initGrid() {
     $('[data-start]').on('click', function() {
-        $(this).remove();
-        // create container div
-        $('body').append('<div id="container"</div>');
-
         // set the height and width of the canvas
         var size = prompt("What size grid would you like?");
 
@@ -26,7 +22,6 @@ function init () {
             alert('Oops, something went wrong.');
             window.location.reload();
         }
-
         // add opacity each time mouse enters a block
         $('.pixel').mouseenter(function() {
             $(this).addClass('bg-color');
@@ -36,5 +31,11 @@ function init () {
                 }
             });
         });
+    });
+}
+
+function clearGrid() {
+    $('[data-clear]').on('click', function() {
+        $('#container').empty();
     });
 }
