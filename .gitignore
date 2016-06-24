@@ -2,3 +2,4 @@ config.rb;
 .gitignore
 /.idea
 config.rb
+/.sass-cache

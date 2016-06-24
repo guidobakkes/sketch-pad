@@ -1,41 +1,43 @@
 $(document).ready(function() {
-    initGrid();
     clearGrid();
+    opacity();
 });
 
-function initGrid() {
-    $('[data-start]').on('click', function() {
-        // set the height and width of the canvas
-        var size = prompt("What size grid would you like?");
-
-        // container height with ul's
-        for (var i = 0; i < size; i++) {
-            $('#container').append("<ul></ul>");
+function initGrid(userSize) {
+    // get pixel size
+    var size = 816 / userSize;
+    // append pixels to container
+    for (var i = 1; i <= userSize; i++) {
+        for (var j = 1; j <= userSize; j++) {
+            $('.container').append("<div class='pixel'></div>");
         }
-
-        // fill ul with li for width
-        if (size < 31) {
-            for (var j = 0; j < size; j++) {
-                $('ul').append('<li class="pixel"></li>');
-            }
-        } else {
-            alert('Oops, something went wrong.');
-            window.location.reload();
-        }
-        // add opacity each time mouse enters a block
-        $('.pixel').mouseenter(function() {
-            $(this).addClass('bg-color');
-            $(this).css({
-                opacity: function(index, value) {
-                    return parseFloat(value) * 1.5;
-                }
-            });
-        });
-    });
+    }
+    // set pixel size
+    $('.pixel').css("height", size);
+    $('.pixel').css("width", size);
+    // initiate draw functionality
+    opacity();
 }
 
 function clearGrid() {
     $('[data-clear]').on('click', function() {
-        $('#container').empty();
+        $('.container').empty();
+        // ask user for new input
+        var userSize = prompt("What size grid would you like?");
+        // initiate grid with new user input
+        initGrid(userSize);
+    });
+}
+
+function opacity() {
+    $('.pixel').mouseenter(function() {
+        // add pixel color
+        $(this).addClass('bg-color');
+        // add opacity to pixel on mouse over
+        $(this).css({
+            opacity: function(index, value) {
+                return parseFloat(value) * 1.5;
+            }
+        });
     });
 }

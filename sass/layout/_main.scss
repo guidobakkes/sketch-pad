@@ -4,31 +4,14 @@ body {
     min-width: 825px;
 }
 
-#container {
+.nav {
+    text-align: center;;
+}
+
+.container {
     max-width: 816px;
     max-height: 816px;
-    border: 1px solid #f9f9f9;
+    border: 1px solid $border-main;
     border-radius: 2px;
-    margin: 20px auto;
-    position: relative;
-}
-
-ul {
-    display: table-cell;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.bg-color {
-    background-color: #2d2d2d;
-    opacity: 0.1;
+    margin: auto;
 }
