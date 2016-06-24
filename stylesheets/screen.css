@@ -1,0 +1,117 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: linear-gradient(146deg, #84d6d0, #2e8fd2);
+  background-size: 400% 200%;
+  min-width: 825px;
+}
+
+[data-start] {
+  width: 150px;
+  height: auto;
+  padding: 20px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: #d5978e;
+  text-transform: uppercase;
+}
+
+[data-clear] {
+  width: 150px;
+  height: auto;
+  padding: 20px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 20px;
+  background-color: #d5978e;
+  text-transform: uppercase;
+}
+
+#container {
+  max-width: 816px;
+  max-height: 816px;
+  border: 1px solid #f9f9f9;
+  border-radius: 2px;
+  margin: 20px auto;
+  position: relative;
+}
+
+ul {
+  display: table-cell;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bg-color {
+  background-color: #2d2d2d;
+  opacity: 0.1;
+}
