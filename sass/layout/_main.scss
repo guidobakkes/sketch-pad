@@ -5,13 +5,13 @@ body {
 }
 
 .nav {
-    text-align: center;;
+    margin: 30px 0;
+    text-align: center;
 }
 
 .container {
     max-width: 816px;
     max-height: 816px;
-    border: 1px solid $border-main;
     border-radius: 2px;
     margin: auto;
 }
