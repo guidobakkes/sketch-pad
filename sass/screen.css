@@ -1,8 +1,7 @@
 body {
   background: linear-gradient(146deg, #84d6d0, #2e8fd2);
   background-size: 400% 200%;
-  min-width: 825px;
-}
+  min-width: 825px; }
 
 #container {
   max-width: 816px;
@@ -10,13 +9,11 @@ body {
   border: 1px solid #f9f9f9;
   border-radius: 2px;
   margin: 20px auto;
-  position: relative;
-}
+  position: relative; }
 
 ul {
   display: table-cell;
-  padding: 0;
-}
+  padding: 0; }
 
 li {
   list-style: none;
@@ -25,13 +22,11 @@ li {
   height: 25px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .bg-color {
   background-color: #2d2d2d;
-  opacity: 0.1;
-}
+  opacity: 0.1; }
 
 .btn-lg {
   width: 150px;
@@ -42,5 +37,6 @@ li {
   color: white;
   text-transform: uppercase;
   border-radius: 2px;
-  background-color: #d5978e;
-}
+  background-color: #d5978e; }
+
+/*# sourceMappingURL=screen.css.map */

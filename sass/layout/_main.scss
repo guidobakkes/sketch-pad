@@ -4,29 +4,6 @@ body {
     min-width: 825px;
 }
 
-[data-start] {
-    width: 150px;
-    height: auto;
-    padding: 20px;
-    border: none;
-    color: white;
-    font-size: 20px;
-    background-color: #d5978e;
-    text-transform: uppercase;
-}
-
-[data-clear] {
-    width: 150px;
-    height: auto;
-    padding: 20px;
-    border: none;
-    border-radius: 2px;
-    color: white;
-    font-size: 20px;
-    background-color: #d5978e;
-    text-transform: uppercase;
-}
-
 #container {
     max-width: 816px;
     max-height: 816px;
