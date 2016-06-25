@@ -20,7 +20,7 @@ function initGrid(userSize) {
 }
 
 function clearGrid() {
-    $('[data-clear]').on('click', function() {
+    $('[data-clear]').click(function() {
         $('.container').empty();
         // ask user for new input
         var userSize = prompt("What size grid would you like?");
