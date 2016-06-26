@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 function initGrid(userSize) {
     // get pixel size
-    var size = 816 / userSize;
+    var size = 512 / userSize;
     // append pixels to container
     for (var i = 1; i <= userSize; i++) {
         for (var j = 1; j <= userSize; j++) {
@@ -36,7 +36,7 @@ function opacity() {
         // add opacity to pixel on mouse over
         $(this).css({
             opacity: function(index, value) {
-                return parseFloat(value) * 1.5;
+                return parseFloat(value) * 1.3;
             }
         });
     });

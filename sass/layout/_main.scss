@@ -1,7 +1,13 @@
 body {
     background: linear-gradient(146deg, #84d6d0, #2e8fd2);
     background-size: 400% 200%;
-    min-width: 825px;
+    min-width: 520px;
+}
+
+.title {
+    font-family: 'Helvetica', sans-serif;
+    color: $dark;
+    text-align: center;
 }
 
 .nav {
@@ -10,8 +16,8 @@ body {
 }
 
 .container {
-    max-width: 816px;
-    max-height: 816px;
+    max-width: 512px;
+    max-height: 512px;
     border-radius: 2px;
     margin: auto;
 }
