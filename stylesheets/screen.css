@@ -37,6 +37,9 @@ body {
 }
 .btn-lg:focus {
   outline: none;
+  -webkit-box-shadow: inset 0px 0px 23px 0px rgba(153, 11, 39, 0.47);
+  -moz-box-shadow: inset 0px 0px 23px 0px rgba(153, 11, 39, 0.47);
+  box-shadow: inset 0px 0px 23px 0px rgba(153, 11, 39, 0.47);
 }
 
 .pixel {
